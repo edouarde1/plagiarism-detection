@@ -1,3 +1,7 @@
+
+# Files
+
+
 grabs each file in data/*.txt and stores as a collection
 runs collection of files through run_n_grams() from %n_grams.py
 collects n_grams.py informtion and runs through cacls() from %containment.py 
