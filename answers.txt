@@ -1,0 +1,174 @@
+Result Intuitions
+
+
+Question 1
+
+Pair 1: (b.txt, g.txt)
+Verbatim plagiarism, identical documents.
+
+Pair 2: (k.txt, z.txt)
+Verbatim plagiarism detected between text documents. 
+
+    k.txt
+    �With computer science, we can create lots of different 
+    things like video games, websites, and robots that think 
+    for themselves.�
+
+    z.txt
+    �This can be as simple as making a video game, websites, and 
+    robots that think for themselves, or complex simulations of the human brain.�
+
+Pair 3: (h.txt,y.txt)
+Inadequate paraphrase as well as verbatim plagiarism detected between text documents 
+
+    h.txt 
+    �Computer science is the study of computing and its use in 
+    applications through the method of maths, logic, and programming 
+    languages. As you know, computers has a lot of use in daily life, 
+    like how does our laptop work and how does the laptop process any 
+    request you make . . .�
+
+    y.txt 
+    �Computer science is the throughout study of computing, of 
+    the basic structure and nature of computer, as well as its 
+    use in applications through the method of mathematics, logic, 
+    and communication. Computer science has a lot of use in daily 
+    life, for example, how does our laptop system work and how does 
+    the system of the laptop process any request or actions you make ��
+
+Pair 4: (b.txt, f.txt)
+Inadequate paraphrasing detected between documents
+
+    b.txt
+    �Computer science is the study of computers, what they are made of, 
+    how they think, and how we can use them to make our lives easier. 
+    The physical part of the computer is called the hardware. Computer 
+    scientists that are interested in hardware can either develop parts 
+    that make computers faster, or combine parts for other people. The 
+    part of the computer that knows what to do is called the software 
+    which is what is used to make programs. Computer scientists that 
+    are interested in software can create programs that solve problems 
+    and make our lives easier. Others work on computer theory like machine 
+    learning and algorithms.�
+
+    f.txt 
+    Computer science is the study of computers, how they work, why they 
+    work the way that they do, and how to make them do new things. Some 
+    computer scientists may work on hardware which is what computers are 
+    made of, others might work on software which is what is used to make 
+    programs. These programs solve problems and make our lives easier. 
+    Others still will work on computer theory including algorithms, computation, 
+    and information. Overall, computer science is just as varied and broad 
+    as any other science, but instead of working with the body like in biology, 
+    we work with an electronic body called the computer.
+
+Pair 5: (b.txt,f.txt)
+Inadequate paraphrasing detected between documents
+
+    b.txt
+    �Computer science is the study of computers, what they are made of, how they 
+    think, and how we can use them to make our lives easier. The physical part 
+    of the computer is called the hardware. Computer scientists that are interested 
+    in hardware can either develop parts that make computers faster, or combine 
+    parts for other people. The part of the computer that knows what to do is called 
+    the software which is what is used to make programs. Computer scientists that are 
+    interested in software can create programs that solve problems and make our lives 
+    easier. Others work on computer theory like machine learning and algorithms.�
+
+    f.txt 
+    Computer science is the study of computers, how they work, why they work the way 
+    that they do, and how to make them do new things. Some computer scientists may 
+    work on hardware which is what computers are made of, others might work on software 
+    which is what is used to make programs. These programs solve problems and make our 
+    lives easier. Others still will work on computer theory including algorithms, computation, 
+    and information. Overall, computer science is just as varied and broad as any other 
+    science, but instead of working with the body like in biology, we work with an 
+    electronic body called the computer.
+
+
+
+Pair 6: (p.txt,f.txt)
+Verbatim plagiarism detected between these documents. 
+
+    p.txt
+    Computer Science is the study of computers, how they work, why they work the way 
+    they do, and how to create new programs on computers. People who study computer 
+    science often create programs that allow people to do new things on computers. Things 
+    that might be created on a computer would be something like a new game, or something 
+    to help solve math problems, or something to let people all around the world chat with 
+    each other. Almost anything new that is created on the computer is created under the 
+    umbrella of computer science.  
+
+    f.txt 
+    Computer science is the study of computers, how they work, why they work the way 
+    that they do, and how to make them do new things. Some computer scientists may work 
+    on hardware which is what computers are made of, others might work on software which is 
+    what is used to make programs. These programs solve problems and make our lives easier. 
+    Others still will work on computer theory including algorithms, computation, and information. 
+    Overall, computer science is just as varied and broad as any other science, but instead of 
+    working with the body like in biology, we work with an electronic body called the computer.
+
+
+Pair 7: (p.txt,g.txt)
+Verbatim plagiarism detected between these documents. 
+
+    p.txt
+    Computer Science is the study of computers, how they work, why they work the way they do, and 
+    how to create new programs on computers. People who study computer science often create programs 
+    that allow people to do new things on computers. Things that might be created on a computer would 
+    be something like a new game, or something to help solve math problems, or something to let people 
+    all around the world chat with each other. Almost anything new that is created on the computer 
+    is created under the umbrella of computer science.  
+
+
+
+    g.txt 
+    Computer science is the study of computers, how they work, why they work the way that they do, 
+    and how to make them do new things. Some computer scientists may work on hardware which is what 
+    computers are made of, others might work on software which is what is used to make programs. 
+    These programs solve problems and make our lives easier. Others still will work on computer 
+    theory including algorithms, computation, and information. Overall, computer science is just as 
+    varied and broad as any other science, but instead of working with the body like in biology, we 
+    work with an electronic body called the computer.
+
+
+Question 2
+
+One text pair that may require further investigation is (p.txt, z.txt). The containment values follow a 
+similar pattern as the others in which as the n-gram gets larger the containment value decreases. Although 
+the containment value decreases much faster as the n-grams increase. Which reduces the likelihood of 
+verbatim plagiarism. Since there is some similarity in larger n-grams there may be some verbatim or inadequate 
+plagiarism which might require further investigation.  
+
+This similar observation is seen with (z.txt, f.txt) there is a possible chance of minimal plagiarism. 
+Would require a human to determine this.
+
+Question 3
+
+If the texts are the same, as n increases the containment values will stay the same, 1. This because all sets of
+ n-grams will match 100% of the time. They will always produce the same n-gram vectors.  
+
+Question 4
+
+Adding stemming onto the preprocessing procedure will change the outcomes of the containment values. This is because 
+additional matches will be detected between words in different tenses and having different grammatical usages 
+(e.g plural words vs non-plural words). This change will cause the containment values to increase.   
+
+Question 5
+
+To detect plagiarism for a small text a good value of n would be n=5. This value will not hold for borderline cases. 
+There is a possibility of two text documents to only have a few matches between this value of n. Depending on the context, 
+these documents could pass and not be considered plagiarism. In the result sets, the borderline pairs have a 5-gram 
+containment value of about 8.
+
+Considering that, in general this value is a good in detecting plagiarism between documents. If the containment value 
+of n is high, there is a likely change that plagiarism is detected. In the plagiarized documents detected above, 
+this value was generally above 10%. 
+
+
+
+Question 6
+
+For auto-detecting plagiarism a good value of n would be 10%. In the plagiarized cases listed in question 1, the 5-n gram 
+containment values are above 10%. The borderline cases had 5-n gram values below 10%. That would mean that if the containment 
+value is near or below 10%, this document might need to be investigated further and would not be auto-detected as plagiarized. 
